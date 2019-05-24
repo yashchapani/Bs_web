@@ -4,7 +4,7 @@
 }
 
 .navbar{
-    position: absolute;
+    position: fixed;
     width:100%;
     background-color:rgb(37, 36, 36);
     z-index: 1;
