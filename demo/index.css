@@ -130,15 +130,73 @@
  
 
 
-.class2, .class3{
+ .Text{
+    padding: 10px;
+    position: absolute;
+    display: block;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    background-color: #000;
+    color: #ecb91e;
+    font-size: 60px;
+    opacity: 1;
+}
+.BS_Brands, .class2, .class3{
     width: 100%;
     height: 60%;
     background-color: #000;
 }
 
-.class2 .Anklets{
+.BS_Brands{
+    padding: 10px;
+    font-size: 40px;
+    height: 70%;
+    text-align: center;
+    color: #c59a19;
+}
+.BS_Brands .BS{
     position: absolute;
     width: 38%;
+    height: 42%;
+    margin: 5% 5% 5% 5%;
+    background-image: url("images/anklets/main1.jpg");
+    opacity: 0.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.BS_Brands .BS:hover{
+    transform: scale(1.2);
+    opacity: 0.4;
+}
+
+.BS_Brands .BSK{
+    position: absolute;
+    left: 50%;
+    width: 38%;
+    height: 42%;
+    margin: 5% 5% 5% 5%;
+    background-image: url("images/necklace/main1.jpg");
+    opacity: 0.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.BS_Brands .BSK:hover{
+    transform: scale(1.2);
+    opacity: 0.4;
+}
+
+.BS_Brands .Text{
+    font-size: 40px;
+    opacity: 1;
+    color: #c59a19;
+}
+.class2 .Anklets{
+    position: absolute;
+    width: 88%;
     height: 42%;
     margin: 5% 5% 5% 5%;
     background-image: url("images/anklets/main1.jpg");
@@ -151,28 +209,13 @@
     opacity: 0.4;
 }
 
-.class2 .Necklace{
-    position: absolute;
-    left: 50%;
-    width: 38%;
-    height: 42%;
-    margin: 5% 5% 5% 5%;
-    background-image: url("images/necklace/main1.jpg");
-    opacity: 0.5;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.class2 .Necklace:hover{
-    transform: scale(1.2);
-    opacity: 0.4;
-}
 
 .class3 .Rings{
     position: absolute;
     width: 38%;
     height: 42%;
     margin: 5% 5% 5% 5%;
-    background-image: url("images/rings/main1.jpg");
+    background-image: url("images/necklace/main1.jpg");
     opacity: 0.5;
     background-size: cover;
     background-repeat: no-repeat;
@@ -206,7 +249,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 80%;
+    
     opacity: 0.8;
 }
 
@@ -220,22 +263,20 @@
     font-weight: 300;
     opacity: 1;
 }
+
+.parallex1{
+    background-image: url("images/9.jpg");
+    min-height: 60%;
+}
+
+.parallex2{
+    background-image: url("images/6.jpg");
+    min-height: 80%;
+}
+
 .class6 {
     background-color: rgb(255, 255, 255);
     width: 100%;
     height:40%;
 }
 
-
-.Text{
-    padding: 10px;
-    position: absolute;
-    display: block;
-    top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-    background-color: #000;
-    color: #e0b122;
-    font-size: 60px;
-    opacity: 1;
-}
