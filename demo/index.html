@@ -1,74 +1,109 @@
 <html>
+
 <head>
 
     <link rel="stylesheet" href="index.css">
-    
+
 </head>
 
 
 <body>
 
-    
-    <div class="navbar">
-        <div class="logo">
-            <img src="images/bs-logo2.svg" height="100">
-        </div>
-        <div class = "nav">
+
+    <header class="navbar" id="navbar">
+        <a href="" class="logo">
+            <img src="images/bs-logo2.svg">
+        </a>
+        <div class="nav" id="nav">
             <!--<img src="bs logo 1.jpg" width="120" height="60">-->
             <ul>
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT US</a></li>
                 <li><a href="#">PAYAL</a></li>
-                <li><a href="#">BICHHIYA</a></li>
-                <li><a href="#">WATCHES</a></li>
-                <li><a href="#">OTHER COLLECTIONS</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">BRACELET</a></li>
+                <li><a href="#">NECK CHAIN</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <!-- <li><a href="#">OTHER COLLECTIONS</a></li> -->
             </ul>
         </div>
-    </div>
-    <div class="class1">
-        <div class="slider1 slider11"></div>
-        <div class="slider1 slider12"></div>
-        <div class="slider1 slider13"></div>
-        <div class="slider1 slider14"></div>
+    </header>
+    <main>
+        <div class="class1">
+            <div class="slider1 slider11"></div>
+            <div class="slider1 slider12"></div>
+            <div class="slider1 slider13"></div>
+            <div class="slider1 slider14"></div>
 
-        <button class="button left-button" onclick="showSlide(-1)">&#10094;</button>
-        <button class="button right-button" onclick="showSlide(1)">&#10095;</button>
-    </div>
+            <button class="button left-button" onclick="showSlide(-1)">&#10094;</button>
+            <button class="button right-button" onclick="showSlide(1)">&#10095;</button>
+        </div>
 
-    <div class="BS_Brands">
+        <div class="BS_Brands">
             OUR BRANDS
-            <div class="BS"><div class="Text">BS COLLECTIONS</div></div>
-            <div class="BSK"><div class="Text">BSK COLLECTIONS</div></div>
-            
+            <div class="BS">
+                <div class="text">BS COLLECTIONS</div>
+            </div>
+            <div class="BSK">
+                <div class="text">BSK COLLECTIONS</div>
+            </div>
+
         </div>
 
-    <div class="parallex1 class5">
+        <div class="parallax1 class5">
             <div class="text">
-                    "COLLECTIONS" 
-            </div>  
-    </div>
-    <div class="class2">
-        <div class="Anklets"><div class="Text">ANKLETS</div></div>
-        
-    </div>
+                "COLLECTIONS"
+            </div>
+        </div>
+        <div class="class2">
+            <div class="Anklets">
+                <div class="text">ANKLETS</div>
+            </div>
 
-    <div class="class3">
-            <div class="Rings"><div class="Text">NECKCHAINS</div></div>
-            <div class="Bracelets"><div class="Text">BRACELETS</div></div>
-    </div>
-
-        <div class="parallex2 class5">
-                <div class="text">
-                        ‘’A piece of jewelry is often a piece of art. But it only becomes valuable when emotions are added to it’’ 
-                </div>  
         </div>
 
-        
-        <div class="class6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id cum repellendus, porro ea nulla enim quis. Mollitia, alias, quasi vel iusto quod, accusamus aut neque tempora delectus iure optio!
+        <div class="class3">
+            <div class="Rings">
+                <div class="text">NECKCHAINS</div>
+            </div>
+            <div class="Bracelets">
+                <div class="text">BRACELETS</div>
+            </div>
         </div>
 
-        <script src="index.js"></script>
+        <div class="parallax2 class5">
+            <div class="text">"A piece of jewelry is often a piece of art. But it only becomes valuable when emotions
+                are
+                added to it"</div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyrights">&copy; 2019 Brijwasi Silver Palace</div>
+        <div class="developed">Designed and Developed by Manu & Yash</div>
+    </footer>
+
+    <script>
+        window.onscroll = function () { scrollFunction(); }
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                var nav = document.getElementById("nav");
+                nav.style.fontSize = "18px";
+                nav.style.lineHeight = "40px";
+                var logo = document.querySelector(".logo img");
+                logo.style.height = "60px";
+            }
+            else {
+                var nav = document.getElementById("nav");
+                nav.style.fontSize = "20px";
+                nav.style.lineHeight = "80px";
+                var logo = document.querySelector(".logo img");
+                logo.style.height = "100px";
+            }
+        }
+
+    </script>
+    <script src="index.js"></script>
 </body>
+
 </html>

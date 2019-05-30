@@ -3,70 +3,54 @@
     padding: 0;
 }
 
+/* ---------------- Nav bar --------------------- */
+
+
 .navbar{
     position: fixed;
+    display: flex;
+    justify-content: space-between;
     width:100%;
     background-color:rgb(37, 36, 36);
     z-index: 1;
 }
 
-.logo{
-    left: 0%;
-    top: 0%;
-    background-color: rgb(37, 36, 36);
-    float: left;
-}
-
 .logo img{
     padding-left: 10px;
     margin: 2px auto;
+    height: 100px;
 }
-
 
 .nav{
-    width: 80%;
-    /* height:80px; */
     line-height: 80px;
-    float: right;
-    border-radius: 20%;
-    
-   
+    font-size: 20px;
 }
 
-.nav img{
+.nav ul{
     padding:10px;
+    text-align: center;
 }
 
-.nav ul li{
+.nav li{
     background-color: rgb(37, 36, 36);
     border-radius: 10px;
     list-style-type: none;
     display: inline-block;
-    
 }
 
-.nav ul li:hover{
+.nav li:hover{
     transform: scale(1.2);
     background-color:  rgb(73, 71, 71);
     opacity: 0.7;
 }
 
-.nav ul{
-    padding:10px;
-    
-    text-align: center;
-    
-
-}
-
-.nav ul li a{
+.nav a{
     padding: 20px;
     color: #c59a19;
-    font-size: 120%;
     text-decoration: none;
 }
 
-
+ /* ---------------- Slider --------------------- */
 
 .class1 .slider1{
     position: relative;
@@ -128,20 +112,22 @@
      left: 94%;
  }
  
+/* ---------------- Content --------------------- */
 
-
- .Text{
+ .text{
     padding: 10px;
     position: absolute;
     display: block;
     top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #000;
     color: #ecb91e;
     font-size: 60px;
     opacity: 1;
 }
+
+
 .BS_Brands, .class2, .class3{
     width: 100%;
     height: 60%;
@@ -264,12 +250,12 @@
     opacity: 1;
 }
 
-.parallex1{
+.parallax1{
     background-image: url("images/9.jpg");
     min-height: 60%;
 }
 
-.parallex2{
+.parallax2{
     background-image: url("images/6.jpg");
     min-height: 80%;
 }
@@ -279,4 +265,19 @@
     width: 100%;
     height:40%;
 }
+
+footer {
+    background-color: black;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.copyrights {
+    color: #c59a19;
+}
+.developed {
+    color: #ecb91e;
+}
+
 
