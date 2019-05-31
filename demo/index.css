@@ -2,17 +2,22 @@
     margin: 0;
     padding: 0;
 }
+main {
+    margin-top: 100px;  /* Initial Nav bar height*/
+}
 
 /* ---------------- Nav bar --------------------- */
 
 
 .navbar{
     position: fixed;
+    top: 0%;
     display: flex;
     justify-content: space-between;
     width:100%;
     background-color:rgb(37, 36, 36);
     z-index: 1;
+    box-sizing: border-box;
 }
 
 .logo img{
@@ -20,7 +25,7 @@
     margin: 2px auto;
     height: 100px;
 }
-
+/* @media (min-width: 400px) { */
 .nav{
     line-height: 80px;
     font-size: 20px;
@@ -50,12 +55,65 @@
     text-decoration: none;
 }
 
+.nav .menu-button{
+    color: #c59a19;
+    display: none;
+}
+
+.nav .mobile-menu{
+    display: none;
+}
+
+@media (min-width: 851px){
+    .mobile-menu{ display: none;}
+}
+
+
+@media (max-width: 850px){
+    .navbar {
+        position: absolute;
+        /* width: 100%; */
+    }
+    .nav .menu-button{
+        display: block;
+        text-align: center;
+    }
+    .nav .desktop-menu{
+        display: none;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar .logo {
+        margin: auto;
+    }
+    .nav .mobile-menu li{
+        display: block;
+        width: 100%;
+    }
+}
+@media (max-width: 1000px) and (min-width: 851px){
+    .nav {
+        font-size: 18px;
+        line-height: 60px;
+    }
+    .logo img{
+        height: 80px;
+    }
+    main {
+        margin-top: 80px;
+    }
+    .nav a{
+        padding: 10px;
+    }
+}
+
+
  /* ---------------- Slider --------------------- */
 
 .class1 .slider1{
     position: relative;
     background-position: center;
-    
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -281,3 +339,29 @@ footer {
 }
 
 
+
+.content-items {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+    "payals payals"
+    "neckchains bracelets";
+}
+
+.content-items .payals{
+    grid-area: payals;
+    text-align: center;
+    background: #000 url("images/anklets/main1.jpg") no-repeat center;
+    /* background-size: cover; */
+    height: 200px;
+}
+
+.content-items .bracelets{
+    grid-area: bracelets;
+    background-image: url("images/bracelets/main.jpg");
+}
+
+.content-items .neckchains{
+    grid-area: neckchains;
+    background-image: url("images/necklace/main1.jpg");
+}

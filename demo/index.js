@@ -21,3 +21,23 @@ function showSlide(n) {
   clear = setTimeout(function(){showSlide(1)}, 4000);
 
 }
+
+var menuOpened = false;
+
+document.getElementById("menu-button").addEventListener("click", () => {
+  console.log("hello" + slideIndex);
+  if(menuOpened == false){
+    var items = document.querySelectorAll(".nav .mobile-menu");
+    items.forEach(item => {
+      item.style.display = "block";
+    });
+    menuOpened = true;
+  }
+  else{
+    var items = document.querySelectorAll(".nav .mobile-menu");
+    items.forEach(item => {
+      item.style.display = "none";
+    });
+    menuOpened = false;
+  }
+});

@@ -1,9 +1,11 @@
 <html>
 
 <head>
-
     <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="lib/bootstrap-4.3.1-dist/css/bootstrap.min.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>BS Jwellers</title>
 </head>
 
 
@@ -11,19 +13,28 @@
 
 
     <header class="navbar" id="navbar">
-        <a href="" class="logo">
+        <a href="#" class="logo">
             <img src="images/bs-logo2.svg">
         </a>
         <div class="nav" id="nav">
             <!--<img src="bs logo 1.jpg" width="120" height="60">-->
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PAYAL</a></li>
-                <li><a href="#">BRACELET</a></li>
-                <li><a href="#">NECK CHAIN</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT US</a></li>
+            <ul class="desktop-menu" id="desktop-menu">
+                <li class="item"><a href="#">HOME</a></li>
+                <li class="item"><a href="#">PAYAL</a></li>
+                <li class="item"><a href="#">BRACELET</a></li>
+                <li class="item"><a href="#">NECK CHAIN</a></li>
+                <li class="item"><a href="#">ABOUT</a></li>
+                <li class="item"><a href="#">CONTACT US</a></li>
                 <!-- <li><a href="#">OTHER COLLECTIONS</a></li> -->
+            </ul>
+            <div class="menu-button" id="menu-button"><a href="#">&#9776; Menu</a></div>
+            <ul class="mobile-menu" id="mobile-menu">
+                <li class="mobile-item"><a href="#">HOME</a></li>
+                <li class="mobile-item"><a href="#">PAYAL</a></li>
+                <li class="mobile-item"><a href="#">BRACELET</a></li>
+                <li class="mobile-item"><a href="#">NECK CHAIN</a></li>
+                <li class="mobile-item"><a href="#">ABOUT</a></li>
+                <li class="mobile-item"><a href="#">CONTACT US</a></li>
             </ul>
         </div>
     </header>
@@ -60,7 +71,7 @@
             </div>
 
         </div>
-
+        
         <div class="class3">
             <div class="Rings">
                 <div class="text">NECKCHAINS</div>
@@ -70,10 +81,21 @@
             </div>
         </div>
 
+
+        <!-- <div class="content-items">
+            <div class="payals">
+                Payals
+            </div>
+            <div class="neckchains">
+                Neckchains
+            </div>
+            <div class="bracelets">
+                Bracelets
+            </div>
+        </div> -->
+
         <div class="parallax2 class5">
-            <div class="text">"A piece of jewelry is often a piece of art. But it only becomes valuable when emotions
-                are
-                added to it"</div>
+            <div class="text">"A piece of jewellery is often a piece of art. But it only becomes valuable when emotions are added to it"</div>
         </div>
     </main>
 
@@ -86,23 +108,30 @@
         window.onscroll = function () { scrollFunction(); }
 
         function scrollFunction() {
-            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                var nav = document.getElementById("nav");
-                nav.style.fontSize = "18px";
-                nav.style.lineHeight = "40px";
-                var logo = document.querySelector(".logo img");
-                logo.style.height = "60px";
-            }
-            else {
-                var nav = document.getElementById("nav");
-                nav.style.fontSize = "20px";
-                nav.style.lineHeight = "80px";
-                var logo = document.querySelector(".logo img");
-                logo.style.height = "100px";
+            console.log(screen.width);
+            if(screen.width > 1000){
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                    var nav = document.getElementById("nav");
+                    nav.style.fontSize = "18px";
+                    nav.style.lineHeight = "40px";
+                    var logo = document.querySelector(".logo img");
+                    logo.style.height = "60px";
+                    var main = document.querySelector("main");
+                    main.style.marginTop = "60px";
+                }
+                else {
+                    var nav = document.getElementById("nav");
+                    nav.style.fontSize = "20px";
+                    nav.style.lineHeight = "80px";
+                    var logo = document.querySelector(".logo img");
+                    logo.style.height = "100px";
+                    var main = document.querySelector("main");
+                    main.style.marginTop = "100px";
+                }
             }
         }
-
     </script>
+    <!-- <script src="lib/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script> -->
     <script src="index.js"></script>
 </body>
 
