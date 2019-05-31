@@ -25,7 +25,6 @@ function showSlide(n) {
 var menuOpened = false;
 
 document.getElementById("menu-button").addEventListener("click", () => {
-  console.log("hello" + slideIndex);
   if(menuOpened == false){
     var items = document.querySelectorAll(".nav .mobile-menu");
     items.forEach(item => {
@@ -41,3 +40,12 @@ document.getElementById("menu-button").addEventListener("click", () => {
     menuOpened = false;
   }
 });
+
+window.onresize = () => {
+if(screen.width > 850){
+  if(menuOpened == true){
+    console.log("menu is opened");
+    document.getElementById("menu-button").click();
+  }
+}
+};
