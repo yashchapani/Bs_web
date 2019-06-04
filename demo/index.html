@@ -45,7 +45,9 @@
             <button class="button left-button" onclick="showSlide(-1)">&#10094;</button>
             <button class="button right-button" onclick="showSlide(1)">&#10095;</button>
         </div>
-        <div class="Brands"><div class="text">"OUR BRANDS"</div></div>
+        <div class="heading-label">
+            <div class="text">OUR BRANDS</div>
+        </div>
         <div class="BS_Brands">
             <div class="BS">
                 <div class="text">BS COLLECTIONS</div>
@@ -58,17 +60,53 @@
 
         <div class="parallax1 class5">
             <div class="text">
-                "COLLECTIONS"
+                COLLECTIONS
             </div>
         </div>
-        <div class="Anklet-Slider">
-            <div class="grid1" style="background-image:url(images/anklets/2.jpg)"></div>
-            <div class="grid1" style="background-image:url(images/anklets/3.jpg)"></div>
-            <div class="grid1" style="background-image:url(images/anklets/4.jpeg)"></div>
-            <div class="grid1" style="background-image:url(images/anklets/5.jpg)"></div>
 
+        <div class="anklet">
+            <div class="heading-label">
+                <div class="text">PAYALS</div>
+            </div>
+            <div class="anklet-slider">
+                <div class="anklet-row">
+                    <div class="anklet-grid">
+                        <div class="anklet-image" style="background-image:url(images/anklets/2.jpg)"></div>
+                        <div class="anklet-text">Payal</div>
+                    </div>
+                    <div class="anklet-grid">
+                        <div class="anklet-image" style="background-image:url(images/anklets/3.jpg)"></div>
+                        <div class="anklet-text">Payal</div>
+                    </div>
+                    <div class="anklet-grid">
+                        <div class="anklet-image" style="background-image:url(images/anklets/4.jpeg)"></div>
+                        <div class="anklet-text">Payal</div>
+                    </div>
+                    <div class="anklet-grid">
+                        <div class="anklet-image" style="background-image:url(images/anklets/5.jpg)"></div>
+                        <div class="anklet-text">Payal</div>
+                    </div>
+                </div>
+                <div class="anklet-row">
+                    <div class="anklet-grid">
+                        <div class="anklet-image" style="background-image:url(images/anklets/3.jpg)"></div>
+                        <div class="anklet-text">Payal</div>
+                    </div>
+                    <div class="anklet-grid">
+                        <div class="anklet-image" style="background-image:url(images/anklets/4.jpeg)"></div>
+                        <div class="anklet-text">Payal</div>
+                    </div>
+                    <div class="anklet-grid">
+                        <div class="anklet-image" style="background-image:url(images/anklets/4.jpeg)"></div>
+                        <div class="anklet-text">Payal</div>
+                    </div>
+                    <div class="anklet-grid">
+                        <div class="anklet-image" style="background-image:url(images/anklets/3.jpg)"></div>
+                        <div class="anklet-text">Payal</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
         <div class="class3">
             <div class="Rings">
                 <div class="text">NECKCHAINS</div>
@@ -79,7 +117,8 @@
         </div>
 
         <div class="parallax2 class5">
-            <div class="text">"A piece of jewellery is often a piece of art. But it only becomes valuable when emotions are added to it"</div>
+            <div class="text">"A piece of jewellery is often a piece of art. But it only becomes valuable when emotions
+                are added to it"</div>
         </div>
     </main>
 
@@ -87,35 +126,6 @@
         <div class="copyrights">&copy; 2019 Brijwasi Silver Palace</div>
         <div class="developed">Designed and Developed by Manu & Yash</div>
     </footer>
-
-    <script>
-        window.onscroll = function () { scrollFunction(); }
-
-        function scrollFunction() {
-            console.log(screen.width);
-            if(screen.width > 1000){
-                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                    var nav = document.getElementById("nav");
-                    nav.style.fontSize = "18px";
-                    nav.style.lineHeight = "40px";
-                    var logo = document.querySelector(".logo img");
-                    logo.style.height = "60px";
-                    var main = document.querySelector("main");
-                    main.style.marginTop = "60px";
-                }
-                else {
-                    var nav = document.getElementById("nav");
-                    nav.style.fontSize = "20px";
-                    nav.style.lineHeight = "80px";
-                    var logo = document.querySelector(".logo img");
-                    logo.style.height = "100px";
-                    var main = document.querySelector("main");
-                    main.style.marginTop = "100px";
-                }
-            }
-        }
-    </script>
-    <!-- <script src="lib/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script> -->
     <script src="index.js"></script>
 </body>
 
