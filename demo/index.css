@@ -312,10 +312,24 @@ main {
 
 .anklet-row .anklet-grid{
     height: 100%;
-    width : 20%;
     opacity: 0.8;
     display: flex;
     flex-direction: column;
+}
+.desktop-slider .anklet-row .anklet-grid{
+    width: 20%;
+}
+
+.tablet-slider .anklet-row .anklet-grid{
+    width: 27%;
+}
+
+.tab-slider .anklet-row .anklet-grid{
+    width: 40%;
+}
+
+.mobile-slider .anklet-row .anklet-grid{
+    width: 80%;
 }
 
 .anklet-grid .anklet-image {
@@ -333,6 +347,65 @@ main {
 }
 .anklet-grid:hover{
     transform: scale(1.3);
+}
+
+
+
+@media (min-width: 850px){
+    .anklet .tablet-slider{
+        display: none;
+    }
+
+    .anklet .tab-slider{
+        display: none;
+    }
+
+    .anklet .mobile-slider{
+        display: none;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 849px){
+    .anklet .desktop-slider{
+        display: none;
+    }
+
+    .anklet .tab-slider{
+        display: none;
+    }
+
+    .anklet .mobile-slider{
+        display: none;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 699px){
+    .anklet .desktop-slider{
+        display: none;
+    }
+
+    .anklet .tablet-slider{
+        display: none;
+    }
+
+    .anklet .mobile-slider{
+        display: none;
+    }
+}
+
+@media (max-width: 499px){
+    .anklet .desktop-slider{
+        display: none;
+    }
+
+    .anklet .tablet-slider{
+        display: none;
+    }
+
+    .anklet .tab-slider{
+        display: none;
+    }
+
 }
 
 
