@@ -31,25 +31,25 @@ main {
     font-size: 20px;
 }
 
-.nav ul{
+.nav .menu{
     padding:10px;
     text-align: center;
 }
 
-.nav li{
+.nav .item{
     background-color: rgb(37, 36, 36);
     border-radius: 10px;
     list-style-type: none;
     display: inline-block;
 }
 
-.nav li:hover{
+.nav .item:hover{
     transform: scale(1.2);
     background-color:  rgb(73, 71, 71);
     opacity: 0.7;
 }
 
-.nav a{
+.nav .item > a{
     padding: 20px;
     color: #ecb91e;
     text-decoration: none;
@@ -64,6 +64,31 @@ main {
     display: none;
 }
 
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color:black;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+    color: #ecb91e;
+    line-height: initial;
+    opacity: 1;
+}
+
+.dropdown-item{
+    padding: 10px;
+}
+.dropdown-item:hover{
+    background-color: rgb(37, 36, 36);
+
+}
+
+.nav .item:hover > .dropdown {
+    display: block;
+}
 @media (max-width: 850px){
     .navbar {
         position: absolute;
@@ -82,7 +107,7 @@ main {
     .navbar .logo {
         margin: auto;
     }
-    .nav .mobile-menu li{
+    .nav .mobile-menu .item{
         display: block;
         width: 100%;
     }
