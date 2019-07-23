@@ -53,8 +53,7 @@ window.onresize = () => {
 window.onscroll = function () { scrollFunction(); }
 
 function scrollFunction() {
-  console.log(screen.width);
-  if (screen.width > 1000) {
+  if (document.body.clientWidth > 1000) {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       var nav = document.getElementById("nav");
       nav.style.fontSize = "18px";
