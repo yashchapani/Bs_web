@@ -1,0 +1,596 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main {
+    margin-top: 100px;  /* Initial Nav bar height*/
+}
+
+/* ---------------- Nav bar --------------------- */
+
+
+.navbar{
+    position: fixed;
+    top: 0%;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    background-color:rgb(37, 36, 36);
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.logo img{
+    padding-left: 10px;
+    margin: 2px auto;
+    height: 100px;
+}
+/* @media (min-width: 400px) { */
+.nav{
+    line-height: 80px;
+    font-size: 20px;
+}
+
+.nav .menu{
+    padding:10px;
+    text-align: center;
+}
+
+.nav .item{
+    background-color: rgb(37, 36, 36);
+    border-radius: 10px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav .item:hover{
+    transform: scale(1.2);
+    background-color:  rgb(73, 71, 71);
+    opacity: 0.7;
+}
+
+.nav .item > a{
+    padding: 20px;
+    color: #ecb91e;
+    text-decoration: none;
+}
+
+.nav .menu-button{
+    color: #ecb91e;
+    display: none;
+}
+
+.menu-button > a{
+    color: #ecb91e;
+    text-decoration: none;
+}
+
+.nav .mobile-menu{
+    display: none;
+}
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color:black;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+    color: #ecb91e;
+    line-height: initial;
+    opacity: 1;
+}
+
+.dropdown-item{
+    padding: 10px;
+}
+.dropdown-item:hover{
+    background-color: rgb(37, 36, 36);
+
+}
+
+.nav .item:hover > .dropdown {
+    display: block;
+}
+@media (max-width: 850px){
+    .navbar {
+        position: absolute;
+        /* width: 100%; */
+    }
+    .nav .menu-button{
+        display: block;
+        text-align: center;
+    }
+    .nav .desktop-menu{
+        display: none;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar .logo {
+        margin: auto;
+    }
+    .nav .mobile-menu .item{
+        display: block;
+        width: 100%;
+    }
+}
+@media (max-width: 1000px) and (min-width: 851px){
+    .nav {
+        font-size: 17px;
+        line-height: 60px;
+    }
+    .logo img{
+        height: 80px;
+    }
+    main {
+        margin-top: 80px;
+    }
+    .nav a{
+        padding: 10px;
+    }
+}
+
+
+ /* ---------------- Slider --------------------- */
+
+.class1 .slider1{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+ .class1 .slider11{
+    background-image: url("../images/slider1/2.jpg");
+    min-height: 100%;
+ }
+
+ .class1 .slider12{
+    background-image: url("../images/slider1/1.jpg");
+    min-height: 100%;
+ }
+
+ .class1 .slider13{
+    background-image: url("../images/slider1/3.png");
+    min-height: 100%;
+ }
+
+ .class1 .slider14{
+    background-image: url("../images/slider1/8.jpg");
+    min-height: 100%;
+ }
+
+ .class1 .button{
+    background-color: transparent;
+    border: none;
+    color: rgb(26, 25, 25);
+    padding: 1vw;
+    text-align: center;
+    text-decoration-style: double;
+    font-size: 2.5vw;
+    margin: 4px 2px;
+    cursor: pointer;
+    opacity: 0.7;
+    scale: 1.7;
+ }
+
+
+ .class1 .left-button{
+     position: absolute;
+     top: 50%;
+     
+ }
+
+ .class1 .right-button{
+     position: absolute;
+     top: 50%;
+     right: 1vw;
+ }
+
+ .class1 .button:hover{
+    transform: scale(2);
+    opacity: 1;
+    padding: 0%;
+    
+}
+ 
+/* ---------------- Content --------------------- */
+
+ .text{
+    padding: 10px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    color: #ecb91e;
+    font-size: 3vw;
+    opacity: 1;
+}
+
+.heading-label{
+    position: relative;
+    top: 100%;
+    width: 100%;
+    min-height: 15%;
+    background-color: black;
+}
+
+.BS_Brands, .class3{
+    width: 100%;
+    height: 62%;
+    background-color: #000;
+}
+
+.BS_Brands{
+    display: flex;
+    position: relative;
+    font-size: 3vw;
+    
+    text-align: center;
+    color: #c59a19;
+    
+}
+.BS_Brands .BS{
+    
+    width: 40%;
+    height: 78%;
+    margin: 4.1% 5% 5% 5%;
+    background-image: url("../images/anklets/main1.jpg");
+    opacity: 0.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.BS_Brands .BS:hover{
+    transform: scale(1.2);
+    opacity: 0.4;
+}
+
+.BS_Brands .BSK{
+    
+    width: 40%;
+    height: 78%;
+    margin: 4.1% 5% 5% 5%;
+    background-image: url("../images/necklace/main1.jpg");
+    opacity: 0.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.BS_Brands .BSK:hover{
+    transform: scale(1.2);
+    opacity: 0.4;
+}
+
+.BS_Brands .Text{
+    position: relative;
+    width: 20vw;
+    padding: 2%;
+    font-size: 3vw;
+    opacity: 1;
+    color: #c59a19;
+}
+
+
+@media (max-width: 850px){
+    .BS_Brands{
+        flex-direction: column;
+    }
+    .BS_Brands .BS{
+        width: 90%;
+    }
+
+    .BS_Brands .BSK{
+        width: 90%;
+    }
+}
+
+/*----------------------------------------Anklets-------------------------------*/
+/*
+.class2 .Anklet{
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    margin: 5% 5% 5% 5%;
+    background-image: url("../images/anklets/main1.jpg");
+    opacity: 0.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.class2 .Anklets:hover{
+    transform: scale(1.2);
+    opacity: 0.4;
+    margin: 5% 0% 0% 0%;
+}
+*/
+
+.anklet-label{
+    position: relative;
+}
+
+.anklet-slider{
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    background-color: #000;
+    padding: 5%;
+}
+
+.anklet-row{
+    /* width: 100%; */
+    height: 250px;
+    flex-shrink: 0;
+    background-color: #000;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 5%;
+}
+
+.anklet-row .anklet-grid{
+    height: 100%;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+/*
+.desktop-slider .anklet-row .anklet-grid{
+    width: 20%;
+}
+
+.tablet-slider .anklet-row .anklet-grid{
+    width: 27%;
+}
+
+.tab-slider .anklet-row .anklet-grid{
+    width: 40%;
+}
+
+.mobile-slider .anklet-row .anklet-grid{
+    width: 80%;
+} */
+
+.anklet-grid .anklet-image {
+    width: 200px;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.anklet-grid .anklet-text {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+.anklet-grid:hover{
+    transform: scale(1.3);
+}
+
+/* 
+
+@media (min-width: 850px){
+    .anklet .tablet-slider{
+        display: none;
+    }
+
+    .anklet .tab-slider{
+        display: none;
+    }
+
+    .anklet .mobile-slider{
+        display: none;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 849px){
+    .anklet .desktop-slider{
+        display: none;
+    }
+
+    .anklet .tab-slider{
+        display: none;
+    }
+
+    .anklet .mobile-slider{
+        display: none;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 699px){
+    .anklet .desktop-slider{
+        display: none;
+    }
+
+    .anklet .tablet-slider{
+        display: none;
+    }
+
+    .anklet .mobile-slider{
+        display: none;
+    }
+}
+
+@media (max-width: 499px){
+    .anklet .desktop-slider{
+        display: none;
+    }
+
+    .anklet .tablet-slider{
+        display: none;
+    }
+
+    .anklet .tab-slider{
+        display: none;
+    }
+
+} */
+
+
+/*----------------------------------Rings&Bracelet----------------------*/
+.class3 .Rings{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    margin: 5% 5% 5% 5%;
+    background-image: url("../images/necklace/main1.jpg");
+    opacity: 0.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.class3 .Rings:hover{
+    transform: scale(1.2);
+    opacity: 0.4;
+}
+
+.class3 .Bracelets{
+    
+    position: absolute;
+    left: 50%;
+    width: 40%;
+    height: 40%;
+    margin: 5% 5% 5% 5%;
+    background-image: url("../images/bracelets/main.jpg");
+    opacity: 0.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.class3 .Bracelets:hover{
+    transform: scale(1.2);
+    opacity: 0.4;
+}
+
+
+@media (max-width: 850px){
+    .class3{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+    }
+
+    
+    .class3 .Rings{
+        position: absolute;
+        width: 90%;
+        height: 40%;
+        margin: 5% 5% 5% 5%;
+        background-image: url("../images/necklace/main1.jpg");
+        opacity: 0.5;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .class3 .Bracelets{
+    
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        width: 90%;
+        height: 40%;
+        margin: 5% 5% 5% 5%;
+        background-image: url("../images/bracelets/main.jpg");
+        opacity: 0.5;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+
+/*--------------------------------------------------------------------------------*/
+
+.class5{
+    position: relative;
+    background-position: center;
+    background-image: url("../images/6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    opacity: 0.8;
+}
+
+.text-parallax-container{
+    position: relative;
+}
+.text-parallax-container .text{
+    position: absolute;
+    border-top: #000;
+    border-bottom: #000;
+    font-size: 3vw;
+    font-weight: 300;
+    opacity: 1;
+    z-index: 2;
+}
+
+.parallax1{
+    background-image: url("../images/9.jpg");
+    min-height: 60%;
+}
+
+.parallax2{
+    background-image: url("../images/6.jpg");
+    min-height: 80%;
+}
+
+.class6 {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height:40%;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.copyrights {
+    color: #c59a19;
+}
+.developed {
+    color: #ecb91e;
+}
+
+
+
+.content-items {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+    "payals payals"
+    "neckchains bracelets";
+}
+
+.content-items .payals{
+    grid-area: payals;
+    text-align: center;
+    background: #000 url("../images/anklets/main1.jpg") no-repeat center;
+    /* background-size: cover; */
+    height: 200px;
+}
+
+.content-items .bracelets{
+    grid-area: bracelets;
+    background-image: url("../images/bracelets/main.jpg");
+}
+
+.content-items .neckchains{
+    grid-area: neckchains;
+    background-image: url("../images/necklace/main1.jpg");
+}
